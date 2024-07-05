@@ -1,0 +1,33 @@
+[
+    {
+        "name": "info_of_order",
+        "description": "Get information of product from the text",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "products": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "product_name": {
+                                "type": "string",
+                                "description": "Name of the product. (eg. headphones, power bank) else return none",
+                            },
+                            "SKU_no": {
+                                "type": ["string", "integer"],
+                                "description": "SKU no of the product. (eg. 72103589, 20986432) else return none",
+                            },
+                        },
+                        "required": ["product_name"],
+                    },
+                },
+                "address": {
+                    "type": "string",
+                    "description": "Address of the user. else return none",
+                },
+            },
+            "required": ["address"],
+        },
+    }
+]
