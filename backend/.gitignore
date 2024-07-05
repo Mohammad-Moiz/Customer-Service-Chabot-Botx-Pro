@@ -1,0 +1,5 @@
+env/
+env/.gitignore
+migrations/
+__pycache__/
+testing/
